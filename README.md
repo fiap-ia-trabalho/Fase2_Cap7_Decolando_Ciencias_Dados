@@ -23,30 +23,22 @@
 **Coordenador(a):** [ANDRÉ GODOI](https://www.linkedin.com/in/andregodoichiovato)
 
 ---
-## Descrição do projet
+## Descrição do projeto
 ---
 
 ## 📜 Descrição
 
-O **agronegócio** é um dos setores mais relevantes da economia brasileira, englobando toda a cadeia produtiva — desde a **produção agrícola** até a **comercialização e distribuição** de alimentos, fibras e biocombustíveis.
-
-Este projeto tem como objetivo **realizar análises exploratórias de dados do agronegócio**, com foco em **preços médios de produtos hortifrutigranjeiros**, permitindo compreender **padrões regionais**, **variações de preço** e **tendências temporais**.
-
-A análise foi realizada em **R**, com o uso de bibliotecas voltadas à manipulação de dados e estatística descritiva.  
-Os resultados obtidos permitem apoiar **estratégias de mercado, precificação regional e planejamento logístico**.
+O **agronegócio** é um setor estratégico que envolve todas as atividades relacionadas à **produção, transformação, distribuição e comercialização** de produtos agrícolas e pecuários. É um dos pilares da economia mundial, garantindo o abastecimento de alimentos e promovendo desenvolvimento socioeconômico.
 
 ---
 
 ## 📁 Estrutura de pastas
 
-- **.github/** → Configurações e automações do GitHub.  
-- **assets/** → Imagens e elementos visuais (ex.: logotipos).  
-- **config/** → Arquivos de configuração e parâmetros do projeto.  
-- **data/** → Bases de dados utilizadas, como `PohortDiario.xlsx`.  
-- **docs/** → Documentos explicativos e fontes de dados oficiais.  
-- **scripts/** → Scripts em R usados para análise e visualização.  
-- **outputs/** → Gráficos e tabelas geradas pela análise.  
-- **README.md** → Documento principal com informações do projeto.
+├── trabalho/
+│   ├── Decolando_CD.R
+│   └── PohortDiario.xlsx
+├── README.md
+├── .gitignore
 
 ---
 
@@ -64,7 +56,7 @@ install.packages(c("ggplot2", "dplyr", "DescTools", "readxl", "car", "lmtest"))
 Clone o repositório e acesse a pasta do projeto:
 
 ```bash
-git clone https://github.com/seuusuario/analise-agronegocio.git
+git clone https://github.com/fiap-ia-trabalho/Cap7_Decolando_Ciencias_Dados 
 cd analise-agronegocio/scripts
 
 ### 🚀 Execução
