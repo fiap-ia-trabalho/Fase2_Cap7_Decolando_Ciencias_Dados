@@ -56,11 +56,11 @@ install.packages(c("ggplot2", "dplyr", "DescTools", "readxl", "car", "lmtest"))
 Clone o repositório e acesse a pasta do projeto:
 
 ```bash
-git clone https://github.com/fiap-ia-trabalho/Cap7_Decolando_Ciencias_Dados 
-cd analise-agronegocio/scripts
+git clone https://github.com/fiap-ia-trabalho/Cap7_Decolando_Ciencias_Dados cd Fase2_Cap7_Decolando_Ciencias_Dados
 
 ### 🚀 Execução
 
+Salve o arquivo xlsx
 Abra o arquivo **`analise_agronegocio.R`** no **RStudio** ou **Google Colab com R** e execute o script.
 
 ---
@@ -97,24 +97,14 @@ Esses resultados reforçam a importância da **análise de dados agrícolas** pa
 
 ---
 
-## 🧠 Interpretação no Código  
-Cada bloco do arquivo `.R` contém **comentários interpretativos (2–3 frases)** que explicam o significado das estatísticas e gráficos — garantindo **reprodutibilidade** e **transparência analítica**.
+## 📚 Fonte de Dados  
 
----
-
-## 📚 Fontes Oficiais de Dados  
-
-Consulte `docs/fontes_dados.md` para links e descrições completas das bases utilizadas.
 
 | **Instituição** | **Link Oficial** | **Descrição** |
 |------------------|------------------|----------------|
 | CONAB | [https://www.conab.gov.br/](https://www.conab.gov.br/) | Levantamentos de safras, preços e estoques agrícolas |
-| IBGE | [https://www.ibge.gov.br/](https://www.ibge.gov.br/) | Dados agropecuários, censos e séries históricas |
-| MAPA | [https://www.gov.br/agricultura/pt-br](https://www.gov.br/agricultura/pt-br) | Políticas públicas e estatísticas do setor agropecuário |
-| EMBRAPA | [https://www.embrapa.br/](https://www.embrapa.br/) | Pesquisa e inovação agropecuária |
-| INPE | [https://www.gov.br/inpe/pt-br](https://www.gov.br/inpe/pt-br) | Dados geoespaciais e monitoramento agroambiental |
-| CNA Brasil | [https://www.cnabrasil.org.br/](https://www.cnabrasil.org.br/) | Indicadores econômicos e tendências do agronegócio |
 
+-> Acesse Pohort Diário
 ---
 
 ## 🗃 Histórico de Lançamentos  
