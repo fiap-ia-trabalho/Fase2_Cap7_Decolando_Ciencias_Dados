@@ -5,6 +5,9 @@
 # MARIA_LUISA_RODRIGUES_NASCIMENTO_567659_FASE2_CAP7
 # RAFAELA_TORRES_MARTINS_RM567735_FASE2_CAP7
 
+# GITHUB
+# https://github.com/fiap-ia-trabalho/Fase2_Cap7_Decolando_Ciencias_Dados/tree/main
+
 # ---- BIBLIOTECAS ----
 library(ggplot2)
 library(dplyr)
