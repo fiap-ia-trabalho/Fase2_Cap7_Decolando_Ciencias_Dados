@@ -1,12 +1,8 @@
 # FIAP - Faculdade de Informática e Administração Paulista
 
-<p align="center">
-<a href="https://www.fiap.com.br/">
-<img src="assets/logo-fiap.png" alt="FIAP - Faculdade de Informática e Administração Paulista" border="0" width="40%" height="40%">
-</a>
-</p>
 
-<br>
+<img width="2385" height="642" alt="image" src="https://github.com/user-attachments/assets/594c28cc-66ae-40ac-b8a6-8c39e6f14de4" />
+
 
 # 🧑‍🌾 Análise Exploratória do Agronegócio Brasileiro
 
@@ -48,14 +44,14 @@ O **agronegócio** é um setor estratégico que envolve todas as atividades rela
 Certifique-se de ter o **R (≥ 4.2.0)** instalado.  
 Os seguintes pacotes serão utilizados:
 
-```r
+r
 install.packages(c("ggplot2", "dplyr", "DescTools", "readxl", "car", "lmtest"))
 
 ### 🚀 2. Execução
 
 Clone o repositório e acesse a pasta do projeto:
 
-```bash
+bash
 git clone https://github.com/fiap-ia-trabalho/Cap7_Decolando_Ciencias_Dados cd Fase2_Cap7_Decolando_Ciencias_Dados
 
 ### 🚀 Execução
@@ -90,10 +86,48 @@ Os **quartis** mostraram assimetrias em alguns produtos, sugerindo picos de pre�
 - **Preço médio do morango em 2024:** maior variação nas regiões Sudeste e Sul, associada à sazonalidade climática.
 
 ### 📈 Regressão Linear (Abobrinha)  
-Identificada tendência de **leve queda no preço entre janeiro e março de 2024**.  
-Os resíduos apresentaram **distribuição normal** e **homocedasticidade satisfatória**.  
+# Análise de Regressão Linear do Preço em Função da Data
 
-Esses resultados reforçam a importância da **análise de dados agrícolas** para decisões logísticas e de mercado.
+Foi ajustado um modelo de regressão linear simples para analisar a variação do preço em função da data:
+
+\[
+\text{preco} \sim \text{data}
+\]
+
+## Resultados Estatísticos
+
+**Resíduos:**
+| Estatística | Valor |
+|------------|-------|
+| Mínimo    | -219.00 |
+| 1º Quartil| -183.46 |
+| Mediana   | 15.43  |
+| 3º Quartil| 135.26 |
+| Máximo    | 708.99 |
+
+**Coeficientes do modelo:**
+| Coeficiente | Estimativa     | Erro Padrão | t-valor | p-valor  |
+|------------|----------------|------------|---------|---------|
+| Intercepto | -9.760 × 10³   | 4.095 × 10³ | -2.383  | 0.0173 * |
+| Data       | 5.843 × 10⁻⁶   | 2.398 × 10⁻⁶ | 2.437   | 0.0150 * |
+
+**Medidas de ajuste do modelo:**
+- Residual Standard Error: 187.7
+- R²: 0.00477
+- R² Ajustado: 0.00397
+- F-statistic: 5.939 (p = 0.01495)
+
+---
+
+<img width="1144" height="550" alt="image" src="https://github.com/user-attachments/assets/db921cde-3c0c-4d8a-b25b-0016be46ac9d" />
+
+
+## Interpretação
+
+- O **coeficiente da data** é positivo e estatisticamente significativo (`p < 0.05`), indicando uma **leve tendência de aumento do preço ao longo do tempo**.
+- No entanto, o **R² muito baixo (0,48%)** indica que o modelo **explica praticamente nada da variação dos preços**.
+- Os **resíduos apresentam outliers significativos**, sugerindo que há pontos que não seguem o padrão geral.
+- O modelo é estatisticamente significativo pelo teste F, mas o efeito prático da data no preço é **muito pequeno**.
 
 ---
 
@@ -104,7 +138,8 @@ Esses resultados reforçam a importância da **análise de dados agrícolas** pa
 |------------------|------------------|----------------|
 | CONAB | [https://www.conab.gov.br/](https://www.conab.gov.br/) | Levantamentos de safras, preços e estoques agrícolas |
 
--> Acesse Pohort Diário
+➡ Acesse Pohort Diário
+
 ---
 
 ## 🗃 Histórico de Lançamentos  
