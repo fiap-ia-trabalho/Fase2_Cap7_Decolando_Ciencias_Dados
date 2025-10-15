@@ -72,30 +72,36 @@ Abra o arquivo **`analise_agronegocio.R`** no **RStudio** ou **Google Colab com 
 
 ## 📈 Resumo dos Resultados
 
-🧮 Tendência Central
+🧮 **Tendência Central**
+
 Produtos que apresentaram média e mediana próximas, indicam estabilidade nos preços. Já itens como morango, uva rubi e alho mostraram discrepâncias maiores, sugerindo influência de sazonalidade ou oferta limitada.
 
-📊 Dispersão
+📊 **Dispersão**
+
 Produtos como morango, alho, vagem e brocolo tiveram alto desvio padrão e coeficiente de variação, revelando forte oscilação nos preços. Isso pode estar relacionado à perecibilidade, sazonalidade ou diferenças logísticas entre regiões.
 
-📏 Separatrizes
+📏 **Separatrizes**
+
 Os quartis mostraram assimetrias em produtos como tomate e mamao haway, com Q3 bem acima da mediana. Isso indica que há registros com preços elevados que não representam a maioria, mas influenciam a média geral.
 
-📉 Gráficos
+📉 **Gráficos**
+
 Top 10 produtos com maior preço médio: destaque para frutas delicadas e hortaliças de difícil transporte, como morango, maçã, uva rubi e pera importada.
+
+<img width="930" height="550" alt="image" src="https://github.com/user-attachments/assets/1510f242-dfa8-43ba-933d-cfb893e4c3b1" />
 
 Frequência de registros por produto: maior presença de itens básicos como pepino, mamao haway, maçã e laranja pera, refletindo ampla comercialização.
 
+<img width="930" height="550" alt="image" src="https://github.com/user-attachments/assets/5aa2df03-cf27-4aab-a2bc-d370d3e962ac" />
+
 Preço médio do morango em 2024: maior variação na região norte, com picos em fevereiro, maio e julho, reforçando o impacto de datas comemorativas e clima.
 
+<img width="771" height="544" alt="image" src="https://github.com/user-attachments/assets/f5419cca-a28c-4c5b-9992-c8dc035d7785" />
+
+
 ### 📈 Regressão Linear (Abobrinha)  
-# Análise de Regressão Linear do Preço em Função da Data
 
 Foi ajustado um modelo de regressão linear simples para analisar a variação do preço em função da data:
-
-\[
-\text{preco} \sim \text{data}
-\]
 
 ## Resultados Estatísticos
 
