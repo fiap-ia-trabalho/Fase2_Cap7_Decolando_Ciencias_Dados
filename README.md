@@ -72,18 +72,21 @@ Abra o arquivo **`analise_agronegocio.R`** no **RStudio** ou **Google Colab com 
 
 ## 📈 Resumo dos Resultados
 
-### 🧮 Tendência Central  
-Média e mediana indicam estabilidade em produtos como **batata** e **cebola**, enquanto outros (como **morango**) apresentam forte variação.
+🧮 Tendência Central
+Produtos que apresentaram média e mediana próximas, indicam estabilidade nos preços. Já itens como morango, uva rubi e alho mostraram discrepâncias maiores, sugerindo influência de sazonalidade ou oferta limitada.
 
-### 📊 Dispersão  
-Produtos com alto **desvio padrão** e **coeficiente de variação** revelam maior sensibilidade à sazonalidade e à logística regional.
+📊 Dispersão
+Produtos como morango, alho, vagem e brocolo tiveram alto desvio padrão e coeficiente de variação, revelando forte oscilação nos preços. Isso pode estar relacionado à perecibilidade, sazonalidade ou diferenças logísticas entre regiões.
 
-### 📏 Separatrizes  
-Os **quartis** mostraram assimetrias em alguns produtos, sugerindo picos de preço fora do padrão.
+📏 Separatrizes
+Os quartis mostraram assimetrias em produtos como tomate e mamao haway, com Q3 bem acima da mediana. Isso indica que há registros com preços elevados que não representam a maioria, mas influenciam a média geral.
 
-### 📉 Gráficos  
-- **Top 10 produtos com maior preço médio:** destaque para frutas e hortaliças perecíveis.  
-- **Preço médio do morango em 2024:** maior variação nas regiões Sudeste e Sul, associada à sazonalidade climática.
+📉 Gráficos
+Top 10 produtos com maior preço médio: destaque para frutas delicadas e hortaliças de difícil transporte, como morango, maçã, uva rubi e pera importada.
+
+Frequência de registros por produto: maior presença de itens básicos como pepino, mamao haway, maçã e laranja pera, refletindo ampla comercialização.
+
+Preço médio do morango em 2024: maior variação na região norte, com picos em fevereiro, maio e julho, reforçando o impacto de datas comemorativas e clima.
 
 ### 📈 Regressão Linear (Abobrinha)  
 # Análise de Regressão Linear do Preço em Função da Data
